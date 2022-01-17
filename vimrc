@@ -1,6 +1,6 @@
 " General
 set number  	" Show line numbers
-set relativenumber  "line numbers are relative to cursor position
+"set relativenumber  "line numbers are relative to cursor position
 set linebreak	" Break lines at word (requires Wrap lines)
 set showbreak=+ 	" Wrap-broken line prefix
 set textwidth=100	" Line wrap (number of cols)
@@ -38,4 +38,12 @@ set t_Co=256
 "plugins
 call plug#begin()
     Plug 'preservim/nerdtree'
+    Plug 'itchyny/lightline.vim'
 call plug#end()
+
+"lightline settings
+set laststatus=2
+set noshowmode
+let g:lightline = {
+	    \ 'colorscheme': 'molokai'
+	    \ }

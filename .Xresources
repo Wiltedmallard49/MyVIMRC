@@ -19,3 +19,9 @@ xterm*color12: #5f5fee
 xterm*color13: #bb88dd
 xterm*color14: #4eb4fa
 xterm*color15: #d0d0d0
+
+! Sets the font to Migu 1M
+URxvt.font: xft:Migu 1M:antialias=true:hinting=true:hintstyle=hintfull:rgba=rgb
+
+! Disables the scrollbar
+URxvt.scrollBar: false

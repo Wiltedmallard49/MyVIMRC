@@ -22,28 +22,23 @@ set ruler	" Show row and column ruler information
 set undolevels=1000	" Number of undo levels
 set backspace=indent,eol,start	"backspace behavior
 
-" Enable file type detection
-filetype on
-filetype plugin on
-filetype indent on
+filetype on		"Enables detection of filetype
+filetype plugin on	"Enables loading plugins per filetype
+filetype indent on	"Enables loading an indent file for filetypes
 
-" Turn syntax hilighting on
-syntax on
+syntax on "Turn on syntax hilighting
 
-" set colorscheme
-colorscheme molokai
-let g:rehash256 = 1
-set t_Co=256
+colorscheme molokai "Sets the colorscheme to molokai
+let g:rehash256 = 1 "Sets molokai to use 256 color
+set t_Co=256	    "Sets terminal colors to 256
 
 "plugins
 call plug#begin()
-    Plug 'preservim/nerdtree'
-    Plug 'itchyny/lightline.vim'
+    Plug 'preservim/nerdtree'	    "NERDTree plugin dir
+    Plug 'itchyny/lightline.vim'    "lightline plugin dir
 call plug#end()
 
 "lightline settings
-set laststatus=2
-set noshowmode
-let g:lightline = {
-	    \ 'colorscheme': 'molokai'
-	    \ }
+set laststatus=2    "Enables status bar
+set noshowmode	    "Removes redundant insert text
+let g:lightline = {'colorscheme': 'molokai'} "sets lightline colorscheme to molokai

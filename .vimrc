@@ -1,6 +1,6 @@
 "General
 set number		"Show line numbers
-"set relativenumber   "Line numbers are relative to cursor position
+set relativenumber   "Line numbers are relative to cursor position
 set linebreak		"Break lines at word (requires Wrap lines)
 set showbreak=~ 	"Wrap-broken line prefix
 set textwidth=100	"Line wrap (number of cols)

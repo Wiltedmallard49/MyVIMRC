@@ -1,3 +1,0 @@
-type vim ~/.vimrc to acess
-
-type :echo$MYVIMRC to check it works

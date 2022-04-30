@@ -20,6 +20,18 @@ URxvt*color13: #bb88dd
 URxvt*color14: #4eb4fa
 URxvt*color15: #d0d0d0
 
+! Transparency settings
+! Set both to true and don't touch *shading
+URxvt*inheritPixmap: false
+URxvt*transparent: false
+URxvt*shading: 100
+
+! Cursor settings
+URxvt*cursorBlink: 1
+
+! Bell
+URxvt*visualBell: true 
+
 ! Size
 URxvt*geometry: 120x84
 
@@ -32,7 +44,12 @@ URxvt.scrollBar: false
 ! Enables alt key
 URxvt*meta8: true
 
-! Clickable URLs
-URxvt.perl-ext-common: default,matcher,tabbed
+! Disable Ctrl+Shift
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Extensions
+URxvt.perl-ext-common: default,matcher,tabbed,font-size
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
+URxvt.keysym.C-equal: font-size:increase

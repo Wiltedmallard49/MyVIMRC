@@ -1,55 +1,59 @@
 ! Molokai theme
 ! See: https://gist.github.com/vreon/845878
-URxvt*background: #1c1c1c
-URxvt*foreground: #d0d0d0
-URxvt*cursorColor: #d0d0d0
-URxvt*color0: #101010
-URxvt*color1: #960050
-URxvt*color2: #66aa11
-URxvt*color3: #c47f2c
-URxvt*color4: #30309b
-URxvt*color5: #7e40a5
-URxvt*color6: #3579a8
-URxvt*color7: #9999aa
-URxvt*color8: #303030
-URxvt*color9: #ff0090
-URxvt*color10: #80ff00
-URxvt*color11: #ffba68
-URxvt*color12: #5f5fee
-URxvt*color13: #bb88dd
-URxvt*color14: #4eb4fa
-URxvt*color15: #d0d0d0
+*background:		#1c1c1c		
+*foreground:		#d0d0d0		
+*cursorColor:		#d0d0d0		
+*color0:		#101010		
+*color1: 		#960050		
+*color2: 		#66aa11		
+*color3: 		#c47f2c		
+*color4: 		#30309b		
+*color5: 		#7e40a5		
+*color6: 		#3579a8		
+*color7: 		#9999aa		
+*color8: 		#303030		
+*color9: 		#ff0090		
+*color10:		#80ff00		
+*color11: 		#ffba68		
+*color12: 		#5f5fee		
+*color13: 		#bb88dd		
+*color14: 		#4eb4fa		
+*color15: 		#d0d0d0		
 
 ! Transparency settings
-! Set both to true and don't touch *shading
-URxvt*inheritPixmap: false
-URxvt*transparent: false
-URxvt*shading: 100
+! Set both to true and do not touch *shading
+URxvt*inheritPixmap:		false
+URxvt*transparent:		false
+URxvt*shading:			100
 
 ! Cursor settings
-URxvt*cursorBlink: 1
+URxvt*cursorBlink:		1
 
 ! Bell
-URxvt*visualBell: true 
+URxvt*visualBell:		true 
 
 ! Size
-URxvt*geometry: 120x84
+URxvt*geometry:			120x84
 
 ! Sets font to Migu1M
-URxvt.font: xft:Migu1M:size=16
+URxvt.font:			xft:Migu1M:size=16
 
 ! Disables the scrollbar
-URxvt.scrollBar: false
+URxvt.scrollBar:		false
 
 ! Enables alt key
-URxvt*meta8: true
+URxvt*meta8:			true
 
 ! Disable Ctrl+Shift
-URxvt.iso14755: false
-URxvt.iso14755_52: false
+URxvt.iso14755:			false
+URxvt.iso14755_52:		false
 
 ! Extensions
-URxvt.perl-ext-common: default,matcher,tabbed,font-size
-URxvt.url-launcher: /usr/bin/firefox
-URxvt.matcher.button: 1
-URxvt.keysym.C-equal: font-size:increase
+URxvt.perl-ext-common:		default,matcher,resize-font
+URxvt.url-launcher:		/usr/bin/firefox
+URxvt.matcher.button:		1
+URxvt.resize-font.step:		1
+URxvt.keysym.Control-minus:     resize-font:smaller
+URxvt.keysym.Control-equal:	resize-font:bigger
+URxvt.keysym.Control-0:		resize-font:reset
+URxvt.keysym.C-question:	resize-font:show

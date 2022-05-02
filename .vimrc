@@ -7,6 +7,7 @@ set showbreak=+ 				"Wrap-broken line prefix
 set textwidth=100				"Line wrap (number of cols)
 set showmatch					"Highlight matching brace
 set visualbell					"Use visual bell (no beeping)
+set showcmd					"Shows command
  
 set hlsearch					"Highlight all search results
 set smartcase					"Enable smart-case search
@@ -39,6 +40,7 @@ call plug#begin()
     Plug 'preservim/nerdtree'			"NERDTree plugin dir
     Plug 'itchyny/lightline.vim'    		"lightline plugin dir
     Plug 'tpope/vim-surround'	
+    Plug 'lambdalisue/vim-manpager'		"Manpager
 call plug#end()
 
 "lightline settings

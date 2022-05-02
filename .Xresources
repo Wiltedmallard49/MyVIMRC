@@ -78,4 +78,4 @@ URxvt.keysym.Control-0:		resize-font:reset
 URxvt.keysym.C-question:	resize-font:show
 
 !! Keyboard-select
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-Escape:		perl:keyboard-select:activate

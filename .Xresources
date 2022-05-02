@@ -1,59 +1,81 @@
 ! Molokai theme
 ! See: https://gist.github.com/vreon/845878
-*background:		#1c1c1c		
+
+URxvt.depth: 32
+
+! Fg, Bg, & Cursor
+
 *foreground:		#d0d0d0		
 *cursorColor:		#d0d0d0		
+
+! Opaque
+*background:		#1c1c1c		
+! Transparent
+! URxvt.background: [75]#000000
+
+!! Black
 *color0:		#101010		
-*color1: 		#960050		
-*color2: 		#66aa11		
-*color3: 		#c47f2c		
-*color4: 		#30309b		
-*color5: 		#7e40a5		
-*color6: 		#3579a8		
-*color7: 		#9999aa		
 *color8: 		#303030		
-*color9: 		#ff0090		
-*color10:		#80ff00		
-*color11: 		#ffba68		
-*color12: 		#5f5fee		
-*color13: 		#bb88dd		
-*color14: 		#4eb4fa		
+!! White
 *color15: 		#d0d0d0		
+*color7: 		#9999aa		
+!! Red
+*color9: 		#ff0090		
+*color1: 		#960050		
+!! Green
+*color10:		#80ff00		
+*color2: 		#66aa11		
+!! Orange
+*color11: 		#ffba68		
+*color3: 		#c47f2c		
+!! DBlue
+*color14: 		#4eb4fa		
+*color12: 		#5f5fee		
+!! LBlue
+*color4: 		#30309b		
+*color6: 		#3579a8		
+!! Purple
+*color5: 		#7e40a5		
+*color13: 		#bb88dd		
 
-! Transparency settings
-! Set both to true and do not touch *shading
-URxvt*inheritPixmap:		false
-URxvt*transparent:		false
-URxvt*shading:			100
+!! 256 Color
+URxvt*termName: rxvt-unicode-256color
 
-! Cursor settings
+!! Cursor settings
 URxvt*cursorBlink:		1
 
-! Bell
+!! Bell
 URxvt*visualBell:		true 
 
-! Size
+!! Size
 URxvt*geometry:			120x84
 
-! Sets font to Migu1M
+!! Sets font to Migu1M
 URxvt.font:			xft:Migu1M:size=16
 
-! Disables the scrollbar
+!! Disables the scrollbar
 URxvt.scrollBar:		false
 
-! Enables alt key
+!! Enables alt key
 URxvt*meta8:			true
 
-! Disable Ctrl+Shift
+!! Disable Ctrl+Shift
 URxvt.iso14755:			false
 URxvt.iso14755_52:		false
 
-! Extensions
-URxvt.perl-ext-common:		default,matcher,resize-font
+!! Extensions
+URxvt.perl-ext-common:		default,matcher,resize-font,keyboard-select
+
+!! Matcher (Clickable URLs)
 URxvt.url-launcher:		/usr/bin/firefox
 URxvt.matcher.button:		1
+
+!! Resize-Font
 URxvt.resize-font.step:		1
 URxvt.keysym.Control-minus:     resize-font:smaller
 URxvt.keysym.Control-equal:	resize-font:bigger
 URxvt.keysym.Control-0:		resize-font:reset
 URxvt.keysym.C-question:	resize-font:show
+
+!! Keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate

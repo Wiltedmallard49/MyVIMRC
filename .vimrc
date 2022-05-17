@@ -3,12 +3,13 @@ set nocompatible
 set number					"Show line numbers
 set relativenumber				"Line numbers are relative to cursor position
 set linebreak					"Break lines at word (requires Wrap lines)
-set showbreak=+ 				"Wrap-broken line prefix
+set showbreak=~ 				"Wrap-broken line prefix
 set textwidth=100				"Line wrap (number of cols)
 set showmatch					"Highlight matching brace
 set visualbell					"Use visual bell (no beeping)
-set showcmd					"Shows command
- 
+set showcmd					"Show imput commands
+set mouse=a					"use mouse
+
 set hlsearch					"Highlight all search results
 set smartcase					"Enable smart-case search
 set ignorecase					"Always case-insensitive
@@ -32,8 +33,13 @@ filetype indent on				"Enables loading an indent file for filetypes
 syntax on					"Turn on syntax hilighting
 
 colorscheme molokai				"Sets the colorscheme to molokai
-let g:rehash256 = 1	 			"Sets molokai to use 256 color
-set t_Co=256		 			"Sets terminal colors to 256
+let g:rehash256 = 1				"Sets molokai to use 256 color
+set t_Co=256					"Sets terminal colors to 256
+
+" Disable readonly in diff
+if $diff
+	set noro
+endif
 
 "plugins
 call plug#begin()

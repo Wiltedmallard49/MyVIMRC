@@ -40,8 +40,8 @@ sub on_init {
    my ($self) = @_;
    my $commands = {
      "smaller" => "C-minus",
-     "bigger"  => "C-plus",
-     "reset"   => "C-equal",
+     "bigger"  => "C-equal",
+     "reset"   => "C-0",
      "show"    => "C-question",
    };
    bind_hotkeys($self, $commands);
